@@ -1,0 +1,287 @@
+{
+  "candidate": "v2",
+  "cases": 18,
+  "failures": 0,
+  "findings": [
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "initial",
+      "expected": {
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "outer",
+      "expected": {
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 3
+        }
+      },
+      "case": "replace",
+      "expected": {
+        "items": {
+          "x": 3
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 3
+        }
+      },
+      "case": "inner",
+      "expected": {
+        "items": {
+          "x": 3
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "case": "zero",
+      "expected": {
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "error": "ValueError",
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "case": "invalid_quantity",
+      "expected": {
+        "error": "ValueError",
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "error": "ValueError",
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "case": "invalid_key",
+      "expected": {
+        "error": "ValueError",
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "case": "inner_save",
+      "expected": {
+        "items": {
+          "x": 3,
+          "y": 0
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "z": 7
+        }
+      },
+      "case": "separate",
+      "expected": {
+        "items": {
+          "z": 7
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "outer_discard",
+      "expected": {
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        },
+        "value": null
+      },
+      "case": "missing",
+      "expected": {
+        "items": {
+          "x": 2
+        },
+        "value": null
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "export_detached",
+      "expected": {
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "z": 7
+        },
+        "value": 7
+      },
+      "case": "separate_retained",
+      "expected": {
+        "items": {
+          "z": 7
+        },
+        "value": 7
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "error": "RuntimeError",
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "empty_finish",
+      "expected": {
+        "error": "RuntimeError",
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "new_session",
+      "expected": {
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "error": "TypeError",
+        "items": {
+          "x": 2
+        }
+      },
+      "case": "invalid_save",
+      "expected": {
+        "error": "TypeError",
+        "items": {
+          "x": 2
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 9
+        }
+      },
+      "case": "save_update",
+      "expected": {
+        "items": {
+          "x": 9
+        }
+      },
+      "passed": true
+    },
+    {
+      "actual": {
+        "items": {
+          "x": 9
+        }
+      },
+      "case": "save",
+      "expected": {
+        "items": {
+          "x": 9
+        }
+      },
+      "passed": true
+    }
+  ],
+  "sha256": {
+    "candidate_v2.py": "cc5b68d9002c30f304ef504cf2cbe58e255d74376694d4148d5d5dbff0a1bf6d",
+    "expected.json": "cce960e7e1889829b398e32fcd6ad3ef921f3d75b706e826eb93753a1ff22fdc",
+    "orders.csv": "ab141f28fc3ebac2585e0b3e792ad793ae4e8c13b0ac5c12ba0aa277b9c1badf",
+    "requirements.md": "a9620a1d6b3041632cf7287955f191d8300b12e8ccb3c9849fa15ed2af3053e8",
+    "verify.py": "3a16a54fe59de2d08ab5d182423883c180c9fe71a2a22c794c97afa202f938ab"
+  },
+  "status": "PASS"
+}

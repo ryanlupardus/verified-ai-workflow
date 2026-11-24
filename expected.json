@@ -1,0 +1,20 @@
+{
+  "initial": {"items": {"x": 2}},
+  "outer": {"items": {"x": 2}},
+  "replace": {"items": {"x": 3}},
+  "inner": {"items": {"x": 3}},
+  "zero": {"items": {"x": 3, "y": 0}},
+  "invalid_quantity": {"error": "ValueError", "items": {"x": 3, "y": 0}},
+  "invalid_key": {"error": "ValueError", "items": {"x": 3, "y": 0}},
+  "inner_save": {"items": {"x": 3, "y": 0}},
+  "separate": {"items": {"z": 7}},
+  "outer_discard": {"items": {"x": 2}},
+  "missing": {"value": null, "items": {"x": 2}},
+  "export_detached": {"items": {"x": 2}},
+  "separate_retained": {"value": 7, "items": {"z": 7}},
+  "empty_finish": {"error": "RuntimeError", "items": {"x": 2}},
+  "new_session": {"items": {"x": 2}},
+  "invalid_save": {"error": "TypeError", "items": {"x": 2}},
+  "save_update": {"items": {"x": 9}},
+  "save": {"items": {"x": 9}}
+}
