@@ -21,7 +21,7 @@ python -B verify.py v2
 python -B -m unittest -v
 ```
 
-Run the commands separately. Exit code `1` from `v1` is expected and exposes the regression. The tests compare each CLI run with the bundled JSON report and verify the expected exit status. Local verification used Windows with Python 3.10.11 and 3.14.7. GitHub Actions is configured for Windows and Linux with both Python series. Hosted CI remains unverified.
+Run the commands separately. Exit code `1` from `v1` is expected and exposes the regression. The tests compare each CLI run with the bundled JSON report and verify the expected exit status. Local verification used Windows with Python 3.10.11 and 3.14.7. GitHub Actions is configured for Windows and Linux with both Python series. [Hosted GitHub Actions CI](https://github.com/ryanlupardus/verified-ai-workflow/actions/runs/45376625423) passed all four jobs on Windows and Linux with Python 3.10 and 3.14.
 
 ## Evidence and limitations
 
